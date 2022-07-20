@@ -28,6 +28,7 @@
     background: #2776EA;
     border: #2776EA;
     color: #fff;
+    height: 40px !important;
 }
 .blue:hover{
     color: #fff;
@@ -35,10 +36,11 @@
 .outline-blue{
     border: 1px solid #000000;
     color: #2B2B2B;
+    height: 40px !important;
 }
 .outline-blue:hover{
     background: #2776EA !important;
-    border: #2776EA;
+    border: 1px solid #2776EA;
     color: #fff;
 }
 .input-box{
