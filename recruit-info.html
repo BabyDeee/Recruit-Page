@@ -16,7 +16,7 @@
 <body>
     <section>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-blue">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-blue fixed-top">
                 <div class="container">
                   <a class="navbar-brand me-5 pe-5" href="home.html"><img src="img/recruit-info-logo.png" alt="Logo"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,8 +44,20 @@
                         <li class="nav-item">
                           <a class="nav-link me-lg-2" href="message.html">Message<i class="bi bi-chat-text-fill text-white ms-2"></i></a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                           <a class="nav-link me-lg-2" href="#">Notification<i class="bi bi-bell-fill text-white ms-2"></i></a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-lg-2 position-relative" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Notification<i class="bi bi-bell-fill text-white ms-2"></i><span class="position-absolute top-25 start-75 translate-middle p-1 bg-danger border border-danger rounded-circle">
+                                <span class="visually-hidden">New alerts</span>
+                              </span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item blue" href="message.html"><i class="bi bi-chat-text-fill me-3"></i>You have 2 new messages</a></li>
+                              <li><a class="dropdown-item blue" href="recruit.html"><i class="bi bi-person me-3"></i>3 new recruits was added</a></li>
+                              <li><hr class="dropdown-divider blue"></li>
+                              <li><a class="dropdown-item blue" href="blog-login.html"><i class="bi bi-type-bold me-3"></i>New blog updates</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link me-lg-2" href="profile-page.html">Profile<i class="bi bi-person-circle text-white ms-2"></i></a>
@@ -58,7 +70,7 @@
                 </div>
               </nav>
         </header>
-        <div class="container">
+        <div class="container mt-5">
             <div class="py-5">
                 <div class="position-relative">
                     <div class="ms-2 pb-3">
@@ -71,7 +83,7 @@
                 </div>               
                 <div class="position-relative fmt">
                     <div class="card-body m-auto w-75 resize">
-                        <div class="d-flex justify-content-between align-items-center fr-dir pb-3 mt-4">
+                        <div class="d-flex justify-content-between fr-dir pb-3 mt-4">
                             <div class="d-flex align-items-center pb-3">
                                 <div>
                                     <h6 class="fw-bold pe-3 mb-0">Links to Porfolio:</h6>
@@ -84,7 +96,7 @@
                                 </div>
                             </div>
                             <div>
-                                <a href="resume.html" class="btn blue"><i class="bi bi-file-earmark-plus pe-1"></i>View Resume</a>
+                                <a href="resume.html" class="btn btn-primary"><i class="bi bi-file-earmark-plus pe-1"></i>View Resume</a>
                             </div>
                         </div>
                         <div class="mt-2">
@@ -125,7 +137,7 @@
                                             </div>
                                             <div class="col-md-12 pb-1">
                                                 <label for="address" class="pb-1">Address</label>
-                                                <p class="input-box overflow-hidden">13, Ransom Kuti Road, University of Lagos, Akoka, Yaba</p>
+                                                <p class="input-box" style="height: auto !important;">13, Ransom Kuti Road, University of Lagos, Akoka, Yaba</p>
                                             </div>
                                             <div class="col-md-6 pb-md-5 pb-1">
                                                 <label for="state" class="pb-1">State</label>
@@ -135,54 +147,12 @@
                                                 <label for="country" class="pb-1">Country</label>
                                                 <p class="input-box">Nigeria</p>
                                             </div>
-                                            <div class="col-md-6 col-6">
-                                                <a href="message.html" class="btn blue w-100 py-2 mb-3 me-2 mr">Send a message</a>
-                                            </div>
-                                            <div class="col-md-6 col-6">
-                                                <a href="recruit.html" class="btn outline-blue py-2 w-100 mb-3 ms-2 ml">Cancel</a>
+                                            <div class="d-flex justify-content-center pb-3 fr-dir py-2">
+                                                <a href="message.html" class="btn blue w-100 mb-3 me-2 mr">Send a message</a>
+                                                <a href="recruit.html" class="btn outline-blue w-100 mb-3 ms-2 ml">Cancel</a>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- <div class="d-flex justify-content-between py-3">
-                                        <div class="w-100 pe-2">
-                                            <label for="first-name" class="pb-1">First Name</label>
-                                            <input type="text" class="form-control bg-light" placeholder="Enter First Name">
-                                        </div>
-                                        <div class="w-100 ps-2">
-                                            <label for="last-name" class="pb-1">Last Name</label>
-                                            <input type="text" class="form-control bg-light" placeholder="Enter First Name">
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="pb-3">
-                                        <label for="track" class="pb-1">Track<span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control bg-light" placeholder="Enter Your Track">
-                                    </div> -->
-                                    <!-- <div class="pb-3">
-                                        <label for="email" class="pb-1">Email<span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control bg-light" placeholder="Enter Your Email">
-                                    </div> -->
-                                    <!-- <div class="pb-3">
-                                        <label for="number" class="pb-1">Phone No<span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control bg-light" placeholder="Phone Number">
-                                    </div> -->
-                                    <!-- <div class="pb-3">
-                                        <label for="address" class="pb-1">Address</label>
-                                        <input type="text" class="form-control bg-light" placeholder="">
-                                    </div> -->
-                                    <!-- <div class="d-flex justify-content-between pb-3">
-                                        <div class="w-100 pe-2">
-                                            <label for="state" class="pb-1">State</label>
-                                            <input type="text" class="form-control bg-light" placeholder="">
-                                        </div>
-                                        <div class="w-100 ps-2">
-                                            <label for="country" class="pb-1">Country</label>
-                                            <input type="text" class="form-control bg-light" placeholder="">
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="d-flex justify-content-center pb-3 fr-dir flex-row">
-                                        <a href="message.html" class="btn btn-dark w-100 mb-3 me-2 mr">Send a message</a>
-                                        <a href="recruit.html" class="btn btn-outline-dark w-100 mb-3 ms-2 ml">Cancel</a>
-                                    </div>                                 -->
+                                    </div>                                 
                                 </div>
                                 <div class="tab-pane fade" id="Experience">
                                     <div class="row information-t">
@@ -194,6 +164,8 @@
                                             <label for="position" class="pb-2">Position</label>
                                             <p class="input-box">Senior Art Director</p>
                                         </div>
+                                    </div>
+                                    <div class="row information-t">
                                         <div class="col-md-12 mb-1">
                                             <label for="name" class="pb-2">Description</label>
                                             <p class="input-box1">
@@ -204,14 +176,18 @@
                                                 ● Training and overseeing interns and trainees in the creative department. <br>
                                             </p>
                                         </div>
+                                    </div>
+                                    <div class="row information-t" style="height: auto;">
                                         <div class="col-md-6 pb-1">
                                             <label for="name" class="pb-2">Employer</label>
-                                            <p class="input-box">MTN Nigeria</p>
+                                            <p class="input-box py-md-4 py-lg-2 py-2" style="height: auto !important;">MTN Nigeria</p>
                                         </div>
                                         <div class="col-md-6 pb-1">
                                             <label for="position" class="pb-2">Position</label>
-                                            <p class="input-box">Director, Creative Channels</p>
+                                            <p class="input-box pt-md-3 pt-2 py-lg-2" style="height: auto !important;">Director, Creative Channels</p>
                                         </div>
+                                    </div>
+                                    <div class="row information-t">
                                         <div class="col-md-12 pb-5">
                                             <label for="name" class="pb-1">Description</label>
                                             <p class="input-box1" style="padding-bottom: 50px !important;">● Heading brand campaigns, including submitting ideas for projects and overseeing the development of all creative content. <br>
@@ -220,109 +196,71 @@
                                                 ● Presenting project information, including deadlines and budgets, to executives and clients <br>
                                                 ● Training and overseeing interns, trainees and team leads in the creative department.</p>
                                         </div>
-                                        <div class="col-md-6 col-6">
-                                            <a href="message.html" class="btn blue w-100 mb-3 me-2 mr">Send a message</a>
-                                        </div>
-                                        <div class="col-md-6 col-6">
-                                            <a href="recruit.html" class="btn outline-blue w-100 mb-3 ms-2 ml">Cancel</a>
-                                        </div>
                                     </div>
-                                    <!-- <div class="d-flex justify-content-between py-3">
-                                        <div class="w-100 pe-2">
-                                            <label for="name" class="pb-1">Employer</label>
-                                            <input type="text" class="form-control bg-light">
-                                        </div>
-                                        <div class="w-100 ps-2">
-                                            <label for="position" class="pb-1">Position</label>
-                                            <input type="text" class="form-control bg-light">
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="pb-3">
-                                        <label for="name" class="pb-1">Description</label>
-                                        <div class="">
-                                            <textarea rows="7" class="w-100 p-2 bg-light"></textarea>
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="d-flex justify-content-between pb-3">
-                                        <div class="w-100 pe-2">
-                                            <label for="name" class="pb-1">Employer</label>
-                                            <input type="text" class="form-control bg-light">
-                                        </div>
-                                        <div class="w-100 ps-2">
-                                            <label for="position" class="pb-1">Position</label>
-                                            <input type="text" class="form-control bg-light">
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="pb-3">
-                                        <label for="name" class="pb-1">Description</label>
-                                        <div class="">
-                                            <textarea rows="7" class="w-100 p-2 bg-light"></textarea>
-                                        </div>
-                                    </div> -->
-                                    <!-- <div class="d-flex justify-content-center pb-3 fr-dir">
-                                        <a href="message.html" class="btn btn-dark w-100 mb-3 me-2 mr">Send a message</a>
-                                        <a href="recruit.html" class="btn btn-outline-dark w-100 mb-3 ms-2 ml">Cancel</a>
-                                    </div>                                 -->
+                                    <div class="d-flex justify-content-center pb-3 fr-dir py-2">
+                                        <a href="message.html" class="btn blue w-100 mb-3 me-2 mr">Send a message</a>
+                                        <a href="recruit.html" class="btn outline-blue w-100 mb-3 ms-2 ml">Cancel</a>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="Reviews">
                                     <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review py-4">
-                                        <div>
-                                            <img src="img/recruit-info-img3.png" alt="image" class="john">
+                                            <div>
+                                                <img src="img/recruit-info-img3.png" alt="image" class="john">
+                                            </div>
+                                            <div class="ps-2">
+                                                <h6 class="fw-bold">John Needles</h6>
+                                                <h6>CEO of Coca-cola</h6>
+                                                <h6 class="justify">Working with Femi was a fantasic experience, he delivered all needed assets in due time. 
+                                                He designed a beautiful responsive website and I highly recommend you hire him.</h6>
+                                            </div>
                                         </div>
-                                        <div class="ps-2">
-                                            <h6 class="fw-bold">John Needles</h6>
-                                            <h6>CEO of Coca-cola</h6>
-                                            <h6 class="justify">Working with Femi was a fantasic experience, he delivered all needed assets in due time. 
-                                            He designed a beautiful responsive website and I highly recommend you hire him.</h6>
+                                        <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review pb-4">
+                                            <div>
+                                                <img src="img/recruit-info-img4.png" alt="image" class="john">
+                                            </div>
+                                            <div class="ps-2">
+                                                <h6 class="fw-bold">Smith Drake</h6>
+                                                <h6>HR of Amazon</h6>
+                                                <h6 class="justify">He was recommended to me through a friend and I must say I don’t 
+                                                regret working with him. He is efficient and delivers on time.</h6>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review pb-4">
-                                        <div>
-                                            <img src="img/recruit-info-img4.png" alt="image" class="john">
+                                        <div class="d-flex fr-dir text-center text-lg-start text-md-start review pb-4">
+                                            <div>
+                                                <img src="img/recruit-info-img5.png" alt="image" class="john">
+                                            </div>
+                                            <div class="ps-2">
+                                                <h6 class="fw-bold">Alico Dangote</h6>
+                                                <h6>CEO of Dangote plc</h6>
+                                                <h6 class="justify">I enjoyed working with him because of the strength he puts in. His design are always top notch.</h6>
+                                            </div>
                                         </div>
-                                        <div class="ps-2">
-                                            <h6 class="fw-bold">Smith Drake</h6>
-                                            <h6>HR of Amazon</h6>
-                                            <h6 class="justify">He was recommended to me through a friend and I must say I don’t 
-                                            regret working with him. He is efficient and delivers on time.</h6>
+                                        <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review pb-4">
+                                            <div>
+                                                <img src="img/recruit-info-img6.png" alt="image" class="john">
+                                            </div>
+                                            <div class="ps-2">
+                                                <h6 class="fw-bold">Adeola Bakes</h6>
+                                                <h6>CEO of Foodco</h6>
+                                                <h6 class="justify">Working with Femi was a fantasic experience, he delivered all needed assets in due time. 
+                                                He designed a beautiful responsive website and I highly recommend you hire him.</h6>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex fr-dir text-center text-lg-start text-md-start review pb-4">
-                                        <div>
-                                            <img src="img/recruit-info-img5.png" alt="image" class="john">
-                                        </div>
-                                        <div class="ps-2">
-                                            <h6 class="fw-bold">Alico Dangote</h6>
-                                            <h6>CEO of Dangote plc</h6>
-                                            <h6 class="justify">I enjoyed working with him because of the strength he puts in. His design are always top notch.</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review pb-4">
-                                        <div>
-                                            <img src="img/recruit-info-img6.png" alt="image" class="john">
-                                        </div>
-                                        <div class="ps-2">
-                                            <h6 class="fw-bold">Adeola Bakes</h6>
-                                            <h6>CEO of Foodco</h6>
-                                            <h6 class="justify">Working with Femi was a fantasic experience, he delivered all needed assets in due time. 
-                                            He designed a beautiful responsive website and I highly recommend you hire him.</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review pb-4">
-                                        <div>
-                                            <img src="img/recruit-info-img7.png" alt="image" class="john">
-                                        </div>
-                                        <div class="ps-2">
-                                            <h6 class="fw-bold">John Needles</h6>
-                                            <h6>CEO of Coca-cola</h6>
-                                            <h6 class="justify fw-semibold">Working with Femi was a fantasic experience, he delivered all needed assets in due time. 
-                                            He designed a beautiful responsive website and I highly recommend you hire him.</h6>
-                                        </div>
-                                    </div>         
-                                    <div class="d-flex justify-content-center pb-3 fr-dir pt-5">
-                                        <a href="message.html" class="btn blue w-100 mb-3 me-2 mr">Send a message</a>
-                                        <a href="recruit.html" class="btn outline-blue w-100 mb-3 ms-2 ml">Cancel</a>
-                                    </div>                                
+                                        <div class="d-flex justify-content-between fr-dir text-center text-lg-start text-md-start review pb-4">
+                                            <div>
+                                                <img src="img/recruit-info-img7.png" alt="image" class="john">
+                                            </div>
+                                            <div class="ps-2">
+                                                <h6 class="fw-bold">John Needles</h6>
+                                                <h6>CEO of Coca-cola</h6>
+                                                <h6 class="justify fw-semibold">Working with Femi was a fantasic experience, he delivered all needed assets in due time. 
+                                                He designed a beautiful responsive website and I highly recommend you hire him.</h6>
+                                            </div>
+                                        </div>         
+                                        <div class="d-flex justify-content-center pb-3 fr-dir pb-2 mt-5">
+                                            <a href="message.html" class="btn blue w-100 mb-3 me-2 mr">Send a message</a>
+                                            <a href="recruit.html" class="btn outline-blue w-100 mb-3 ms-2 ml">Cancel</a>
+                                        </div>                                  
                                 </div>
                             </div>
                         </div>
@@ -366,7 +304,9 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-12">
-                        <p class="fw-bold text-light">CONTACT US</p>
+                        <div class="mb-3">
+                            <a href="contact-page-logged.html" class="fw-bold text-decoration-none link-light">CONTACT US</a>
+                        </div>
                         <ul class="list-unstyled fs-14">
                             <li>
                                 <div class="d-flex text-secondary">
